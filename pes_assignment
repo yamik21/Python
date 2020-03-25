@@ -1,0 +1,412 @@
+1)Write a program to Add, Subtract, Multiply, and Divide 2 numbers
+
+a,b=map(int,input("enter any two numbers").split(' '))
+print("Addition",a+b)
+print("Subtraction",a-b)
+print("Multiplication",a*b)
+print("Division",a/b)
+
+2)Write a program to find the biggest of 3 numbers 
+
+a,b,c=map(int,input("enter any three numbers").split(' '))
+if (a>b) and (a>c):
+    print(a,"is the greatest")
+elif (b>c):
+    print(b,"is the greatest")
+else:
+    print(c, "is the greatest")
+    
+3)Write a program to find given number is odd or Even
+
+a=int(input("enter a number"))
+if a%2==0:
+    print(a, "is even")
+else:
+    print(a,"is odd")
+
+4)Write a program to find the number is Prime or not.
+
+p = int(input("enter any number"))
+if p == 1:
+    print(p,"is not prime")
+for i in range(2, p):
+    if p % i == 0:
+        print(p, "is not prime")
+        break
+else:
+        print(p, "is prime")
+        
+5)Write a program to receive 5 command line arguments and print each argument separately
+
+import sys
+
+print("First argument", sys.argv[1])
+print("Second argument", sys.argv[2])
+print("Third argument", sys.argv[3])
+print("Fourth argument", sys.argv[4])
+print("fifth argument", sys.argv[5])
+
+if sys.argv[6] >= sys.argv[7] and sys.argv[6] >= sys.argv[8]:
+	print("the biggest number is", sys.argv[6])
+elif sys.argv[7] >= sys.argv[8]:
+	print("the biggest number is", sys.argv[7])
+else:
+	print("the biggest number is", sys.argv[8])
+  
+6)Write a program to read string and print each character separately.
+
+string_1=input("enter a string")
+for x in string_1:
+    print(x,end=' ')
+
+print(string_1[2:5],string_1[-1:-3])
+
+print(string_1 * 100)
+string_2=input("enter another string")
+
+print(string_1 + string_2)
+
+7)Create a list with at least 10 elements having integer values in it
+
+list1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+list2 = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+print(list1)
+
+print(list1[6:3:-1])
+
+print(list1 * 2)
+
+print(list1 + list2)
+
+8)Repeat program 7 with Tuples
+
+tuple_1 = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j')
+tuple_2 = ('k','l','m','n','o','p')
+
+for x in tuple_1:
+    print(x,end=' ')
+
+print(tuple_1[0:9:2])
+print(tuple_1[9:3:-1])
+
+print(tuple_1 * 2)
+print(tuple_1 + tuple_2)
+
+9)Write program to Add, Subtract, Multiply, Divide 2 Complex numbers.
+
+a,b,c,d = map(int,input("enter any 4 numbers").split(','))
+x=complex(a,b)
+y=complex(c,d)
+
+print("First complex number",x)
+print("Second complex number",y)
+
+print("Addition=", x+y)
+print("subtraction=", x-y)
+print("multiplication=", x*y)
+print("division=", x/y)
+
+10)Using assignment operators, perform following operations
+
+x,y=map(int,input("enter two numbers").split())
+
+x+=y
+print("Addition with assignment operator", x)
+
+x-=y
+print("Subtraction with assignment operator", x)
+
+x*=y
+print("Multiplication with assignment operator", x)
+
+x/=y
+print("division with assignment operator", x)
+
+x%=y
+print("Modulus operation with assignment operator", x)
+
+x**=y
+print("exponentiation with assignment operator", x)
+
+x//=y
+print("floor division with assignment operator", x)
+
+11)Read 2 numbers to variable a and b and perform all bitwise operations on that numbers.
+
+a,b=[int(x) for x in input("Enter any two integers").split()]
+
+print("Bitwise OR is", a|b)
+
+print("Bitwise AND is", a&b)
+
+print("Bitwise NOT is" , ~a, ~b)
+
+print("Bitwise XOR is", a^b)
+
+print("Bitwise right shift is", a>>1,b>>1)
+
+print("Bitwise left shift is", a<<1,b<<1)
+
+12)Read 10 numbers from user and find the average of all
+
+a, b, c, d, e, f, g, h, i, j = map(int,input("Enter 10 numbers").split(' '))
+avg = (a + b + c + d + e + f + g + h + i + j) / 10
+countbig = 0
+countsmall = 0
+countequal = 0
+print("Average of the 10 nos is =", avg)
+if a < avg:
+    countsmall += 1
+elif a > avg:
+    countbig += 1
+else:
+    countequal += 1
+
+if b < avg:
+    countsmall += 1
+elif b > avg:
+    countbig += 1
+else:
+    countequal += 1
+
+if c < avg:
+    countsmall += 1
+elif c > avg:
+    countbig += 1
+else:
+    countequal += 1
+
+if d < avg:
+    countsmall += 1
+elif d > avg:
+    countbig += 1
+else:
+    countequal += 1
+
+if e < avg:
+    countsmall += 1
+elif e > avg:
+    countbig += 1
+else:
+    countequal += 1
+
+if f < avg:
+    countsmall += 1
+elif f > avg:
+    countbig += 1
+else:
+    countequal += 1
+
+if g < avg:
+    countsmall += 1
+elif g > avg:
+    countbig += 1
+else:
+    countequal += 1
+
+if h < avg:
+    countsmall += 1
+elif h > avg:
+    countbig += 1
+else:
+    countequal += 1
+
+if i < avg:
+    countsmall += 1
+elif i > avg:
+    countbig += 1
+else:
+    countequal += 1
+
+if j < avg:
+    countsmall += 1
+elif j > avg:
+    countbig += 1
+else:
+    countequal += 1
+print("the total count of nos bigger than average is ", countbig)
+print("the total count of nos smaller than average is=", countsmall)
+print("the total count of nos equal to the average is=", countequal)
+
+13)Write a program to find the biggest of 4 numbers.
+
+a,b,c,d=map(int,input("enter 4 numbers").split(' '))
+if a>b and a>c and a>d:
+    print("a is the greatest")
+    greatest=a
+elif b>c and b>d:
+    print("b is the greatest")
+    greatest = b
+elif c>d:
+    print("c is the greatest")
+    greatest = c
+else:
+    print("d is the greatest")
+    greatest = d
+
+e=int(input("enter the 5th number"))
+if e>greatest:
+    print("e is the greatest of all 5 numbers")
+else:
+    print(greatest,"is the greatest among 5 numbers")
+
+14)Write a program to create two list A &B such that List A contains Employee Id, List B contain Employee name(minimum 10 entries in each list) &perform following operation
+
+emp_id=[101,102,103,104,105,106,107,108,109,110]
+emp_name=['a','b','c','d','e','f','g','h','i','j']
+print("Employee names", emp_name)
+index=int(input("enter any index"))
+print(emp_id[index],emp_name[index])
+print(emp_name[4:10])
+print(emp_name[3:])
+N=int(input("enter any number"))
+print(emp_id*N, emp_name*N)
+print(emp_id+emp_name)
+for x in range(len(emp_id)):
+    print(emp_id[x],emp_name[x],end=' ')
+    
+15)Create a list of 5 names and check given name exist in the List.
+
+names=['a','b','c','d','e']
+key='a'
+if 'a' in names:
+    print("given name is in the list")
+else:
+    print("not in the list")
+for x in names:
+    if x=='c':
+        print("given name is in the list")
+        break
+else:
+        print("not in the list")
+
+
+print("reverse order=",names[::-1])
+
+16)Write program to perform following:
+     i) Check whether given number is prime or not.
+     
+     p = int(input("enter th"))
+if p == 1:
+    print(p,"is not prime")
+for i in range(2, p):
+    if p % i == 0:
+        print(p, "is not prime")
+        break
+else:
+        print(p, "is prime")
+        
+    ii) Generate all the prime numbers between 1 to N where N is given number
+
+        range_1=int(input("Enter the limit"))
+print("The prime numbers in the given limit")
+for i in range(2,range_1+1):
+    for j in range(2,i):
+      if(i%j)==0:
+        break
+    else:
+      print(i)
+      
+17)Write program to find thebiggest and Smallest of N numbers.
+
+n=int(input("enter the numbers"))
+N=int(input("enter the first number"))
+big=N
+small=N
+i=1
+while i<n:
+    N=int(input("enter the next number"))
+    if N>big:
+        big=N
+    if N<small:
+        small=N
+    i+=1
+print("\n")
+print("the biggest number is",big)
+print("the smallest number is",small)
+
+18)Using loop structures print numbers from 1 to 100.  and using the same loop print numbers from 100 to 1 (reverse printing)
+a) By using For loop 
+b) By using while loop
+c) Let mystring ="Hello world"
+print each character of mystring in to separate line using appropriate loop structure.
+
+list1=[]
+for i in range(101):
+    print(i,end=' ')
+    list1.append(i)
+print("\n")
+list1.reverse()
+print(list1)
+
+i=0
+list1=[]
+while i<=100:
+    print(i,end=' ')
+    list1.append(i)
+    i+=1
+print("\n")
+list1.reverse()
+print(list1)
+
+mystring ="Hello world"
+print("Each char in separate lines")
+for i in mystring:
+    print(i)
+    
+19)Using loop structures print even numbers between 1 to 100.
+
+Using for loop
+
+for i in range(101):
+    if i%2 != 0:
+        continue
+    print(i,end=' ')
+print("\n")
+for i in range(101):
+    if i == 50:
+        break
+    print(i,end=' ')
+print("\n")
+for i in range(101):
+    if i in (10,20,30,40,50):
+        continue
+    print(i,end=' ')
+
+Using while loop
+
+i=0
+while i <= 100:
+    if i%2 != 0:
+        i+=1
+        continue
+    print(i,end=' ')
+    i+=1
+print("\n")
+i=0
+while i <= 100:
+    if i == 90:
+        break
+    print(i,end=' ')
+    i += 1
+print("\n")
+i=0
+while i <=100:
+    if i in (60,70,80,90):
+        i+=1
+        continue
+    print(i,end=' ')
+    i += 1
+
+20)Write a program to generate a Fibonacci series of numbers
+
+first, second = 0, 1
+N=int(input("enter any number"))
+print("Fibonacci series is")
+print(first,second,end=' ')
+for i in range(2,N):
+    next=first+second
+    print(next,end=' ')
+    first=second
+    second=next
